@@ -5,6 +5,7 @@ import Logo from './components/Logoc/Logo';
 import MenuList from './components/MenuList/MenuList';
 import ToggleThemeButton from './components/ToggleThemeButton';
 import { useState } from 'react';
+import AppFooter from './components/Footer/AppFooter';
 
 const { Header, Sider } = Layout;
 
@@ -97,6 +98,7 @@ function App() {
             )}
           </div>
         </Header>
+        <AppFooter />
       </Layout>
     </Layout>
   );

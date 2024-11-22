@@ -1,7 +1,7 @@
 import React from 'react'
 import './menuList.css'
 import { Menu } from 'antd'
-import {HomeOutlined,EditOutlined,UserDeleteOutlined,MessageOutlined,BarsOutlined,SettingOutlined} from '@ant-design/icons'
+import {HomeOutlined,EditOutlined,UserDeleteOutlined,MessageOutlined,BarsOutlined,SettingOutlined,LoginOutlined,FormOutlined} from '@ant-design/icons'
 
 export const MenuList = (darkTheme) => {
   return (
@@ -22,9 +22,10 @@ export const MenuList = (darkTheme) => {
         </Menu.SubMenu>
         <Menu.Item key="subject-5">REACT</Menu.Item>
        </Menu.SubMenu>
-       <Menu.Item key="user" icon={<UserDeleteOutlined />}>
-       Kullanıcı İşlemleri
-       </Menu.Item>
+       <Menu.SubMenu key="user" icon={<UserDeleteOutlined />}title="Kullanıcı İşlemleri">
+       <Menu.Item key="login" icon={<LoginOutlined />}>Giriş Yap</Menu.Item>
+       <Menu.Item key="register" icon={<FormOutlined />}>Kayıt Ol</Menu.Item>
+       </Menu.SubMenu>
        <Menu.Item key="contact" icon={<MessageOutlined />}>
        İletişim
        </Menu.Item>
